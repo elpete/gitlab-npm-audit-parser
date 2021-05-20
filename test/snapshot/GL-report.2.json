@@ -1,5 +1,6 @@
 {
-  "version": "2.0",
+  "version": "14.0.1",
+  "schema": "https://gitlab.com/gitlab-org/security-products/security-report-schemas/-/raw/v14.0.1/dist/dependency-scanning-report-format.json",
   "vulnerabilities": [
     {
       "id": "NPM Audit: axios cve_id: 1594",
@@ -13,7 +14,7 @@
       "confidence": "High",
       "scanner": {
         "id": "npm_audit_advisories",
-        "name": "NPM Audit"
+        "name": "NPM Audit v2"
       },
       "location": {
         "file": "package-lock.json",
@@ -51,7 +52,7 @@
       "confidence": "High",
       "scanner": {
         "id": "npm_audit_advisories",
-        "name": "NPM Audit"
+        "name": "NPM Audit v2"
       },
       "location": {
         "file": "package-lock.json",
@@ -89,7 +90,7 @@
       "confidence": "High",
       "scanner": {
         "id": "npm_audit_advisories",
-        "name": "NPM Audit"
+        "name": "NPM Audit v2"
       },
       "location": {
         "file": "package-lock.json",
@@ -127,7 +128,7 @@
       "confidence": "High",
       "scanner": {
         "id": "npm_audit_advisories",
-        "name": "NPM Audit"
+        "name": "NPM Audit v2"
       },
       "location": {
         "file": "package-lock.json",
@@ -165,7 +166,7 @@
       "confidence": "High",
       "scanner": {
         "id": "npm_audit_advisories",
-        "name": "NPM Audit"
+        "name": "NPM Audit v2"
       },
       "location": {
         "file": "package-lock.json",
@@ -203,7 +204,7 @@
       "confidence": "High",
       "scanner": {
         "id": "npm_audit_advisories",
-        "name": "NPM Audit"
+        "name": "NPM Audit v2"
       },
       "location": {
         "file": "package-lock.json",
@@ -241,7 +242,7 @@
       "confidence": "High",
       "scanner": {
         "id": "npm_audit_advisories",
-        "name": "NPM Audit"
+        "name": "NPM Audit v2"
       },
       "location": {
         "file": "package-lock.json",
@@ -279,7 +280,7 @@
       "confidence": "High",
       "scanner": {
         "id": "npm_audit_advisories",
-        "name": "NPM Audit"
+        "name": "NPM Audit v2"
       },
       "location": {
         "file": "package-lock.json",
@@ -317,7 +318,7 @@
       "confidence": "High",
       "scanner": {
         "id": "npm_audit_advisories",
-        "name": "NPM Audit"
+        "name": "NPM Audit v2"
       },
       "location": {
         "file": "package-lock.json",
@@ -355,7 +356,7 @@
       "confidence": "High",
       "scanner": {
         "id": "npm_audit_advisories",
-        "name": "NPM Audit"
+        "name": "NPM Audit v2"
       },
       "location": {
         "file": "package-lock.json",
