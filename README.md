@@ -30,7 +30,9 @@ dependency scanning:
     reports:
       dependency_scanning: gl-dependency-scanning.json
 ```
-NOTE: If you use a `npm run-script` to call `npm audit` You must add the option `--silent` to `npm run` or have `.npmrc` set the NPM loglevel to silent otherwise the shell output will conflict with the stdin piping to this parser and cause an error.
+NOTE: If you use a `npm run-script` to call `npm audit` due to set project parameters,
+this library will ignore any prefixed stdout data prior to the first open bracket for
+the JSON output. This way `npm run --silent` is no longer required.
 
 ## Test
 

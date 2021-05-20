@@ -8,9 +8,10 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npm run --silent test:v1; npm run --silent test:v2;",
+    "test": "npm run --silent test:v1; npm run --silent test:v2; npm run --silent test:run-script-use;",
     "test:v1": "printf 'v1: '; cat test/v1_report.json | ./parse.js -o GL-report.1.json >/dev/null && diff -q GL-report.1.json test/snapshot/GL-report.1.json && echo success!; RC=$?; rm GL-report.1.json; exit $RC",
-    "test:v2": "printf 'v2: '; cat test/v2_report.json | ./parse.js -o GL-report.2.json >/dev/null && diff -q GL-report.2.json test/snapshot/GL-report.2.json && echo success!; RC=$?; rm GL-report.2.json; exit $RC"
+    "test:v2": "printf 'v2: '; cat test/v2_report.json | ./parse.js -o GL-report.2.json >/dev/null && diff -q GL-report.2.json test/snapshot/GL-report.2.json && echo success!; RC=$?; rm GL-report.2.json; exit $RC",
+    "test:run-script-use": "printf 'run-script-use: '; bash -c 'cat <(echo -e \"\n> npm audit --json\n\") test/v2_report.json' | ./parse.js -o GL-report.runs.json >/dev/null && diff -q GL-report.runs.json test/snapshot/GL-report.2.json && echo success!; RC=$?; rm GL-report.runs.json; exit $RC"
   },
   "repository": {
     "type": "git",
